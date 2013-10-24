@@ -1,9 +1,7 @@
 angular.module('App.NotFound', [])
 
 .config( ($routeProvider) ->
-  $routeProvider.when '/not-found',
-    controller: 'NotFoundCtrl',
-    templateUrl: 'assets/app/not-found/template.htm'
+  Hs.setRoute 'not-found', 'NotFoundCtrl', $routeProvider
 )
 
 .controller('NotFoundCtrl', -> )
