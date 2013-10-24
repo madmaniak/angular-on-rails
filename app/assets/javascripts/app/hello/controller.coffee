@@ -4,6 +4,10 @@ angular.module('App.Hello', [])
   Hs.setRoute 'hello', 'HelloCtrl', $routeProvider
 )
 
+.run( (access) ->
+  access.provide '$rootScope.shared.name', '/hello'
+)
+
 .controller('HelloCtrl', ($location, $rootScope, $scope) ->
   $rootScope.shared =
     name: undefined

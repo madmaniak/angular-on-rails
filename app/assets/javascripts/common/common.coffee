@@ -1,1 +1,1 @@
-angular.module('Common', [])
+angular.module('Common', ['Access'])

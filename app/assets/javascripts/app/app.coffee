@@ -8,4 +8,8 @@ angular.module('App', [
   $routeProvider.otherwise redirectTo: '/not-found'
 )
 
+.run( (access) ->
+  access.watch()
+)
+
 .controller('AppCtrl', -> )
