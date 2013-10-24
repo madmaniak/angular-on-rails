@@ -1,1 +1,5 @@
-= '{{ hello }}'
+= "What's your name?"
+
+%form{ 'ng-submit' => 'hi()' }
+  %input{ 'ng-model' => 'shared.name' }(required)
+  %button{ type: 'submit' }= 'Say hi!'

@@ -1,4 +1,4 @@
-angular.module('App', ['App.NotFound', 'App.Hello'])
+angular.module('App', ['App.NotFound', 'App.Hello', 'App.Hello.Name'])
 
 .config( ($locationProvider, $routeProvider) ->
   $locationProvider.html5Mode true

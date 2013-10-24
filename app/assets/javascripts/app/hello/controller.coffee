@@ -4,6 +4,11 @@ angular.module('App.Hello', [])
   Hs.setRoute 'hello', 'HelloCtrl', $routeProvider
 )
 
-.controller('HelloCtrl', ($scope) ->
-  $scope.hello = 'Hello Angular!'
+.controller('HelloCtrl', ($location, $rootScope, $scope) ->
+  $rootScope.shared =
+    name: undefined
+
+  $scope.hi = ->
+    $location.path '/hello/name'
+
 )
