@@ -1,0 +1,7 @@
+($location, $rootScope, $scope) ->
+
+  $rootScope.shared =
+    name: undefined
+
+  $scope.hi = ->
+    $location.path '/hello/name'

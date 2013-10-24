@@ -1,6 +1,6 @@
 angular.module('App', [
   'Common',
-  'App.NotFound', 'App.Hello', 'App.Hello.Name',
+  <%= AngularTemplate.find_dependencies @pathname.dirname %>
 ])
 
 .config( ($locationProvider, $routeProvider) ->
