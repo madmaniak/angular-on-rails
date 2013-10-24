@@ -1,5 +1,7 @@
-angular.module('App', [])
+angular.module('App', ['App.NotFound', 'App.Hello'])
 
-.controller('AppCtrl', ($scope) ->
-  $scope.hello = 'Hello World!'
+.config( ($routeProvider) ->
+  $routeProvider.otherwise redirectTo: '/not-found'
 )
+
+.controller('AppCtrl', -> )
