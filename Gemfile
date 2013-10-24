@@ -38,4 +38,5 @@ end
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
+gem 'haml'
 gem 'ngmin-rails'
