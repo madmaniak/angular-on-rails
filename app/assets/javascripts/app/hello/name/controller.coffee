@@ -1,11 +1,5 @@
-angular.module('App.Hello.Name', [])
-
-.config( ($routeProvider) ->
-  Hs.setRoute 'hello/name', 'NameCtrl', $routeProvider
-)
+Hs.controller('NameCtrl', 'App.Hello.Name', [], '/hello/name', -> )
 
 .run( (access) ->
   access.requires ['$rootScope.shared.name'], 'NameCtrl'
 )
-
-.controller('NameCtrl', -> )
